@@ -250,14 +250,14 @@
     --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
-[data-theme="dark"] span,
-[data-theme="dark"] p,
-/* Telephone link styles */
-a[href^="tel:"] {
+/* a link styles */
+
+a[href^="tel:"],[href^="mailto:"] {
     text-decoration: none;
     color: #007bff;
 }
-
+[data-theme="dark"] span,
+[data-theme="dark"] p,
 [data-theme="dark"] .text,
 [data-theme="dark"] *:not(.icon) > span {
     color: #007bff !important;
@@ -284,6 +284,10 @@ a[href^="tel:"] {
 }
 
 [data-theme="dark"] a:hover {
+    color: var(--hover-color);
+}
+
+[data-theme="dark"] a {
     color: var(--hover-color);
 }
 
