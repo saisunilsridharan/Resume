@@ -1,0 +1,47 @@
+Hello! I'm Saisunil Sridharan, and I'm excited to share a bit about myself with you.
+
+I'm a Software Engineer based in Bengaluru, and I've been working in the cybersecurity and PKI space for over 3 and a half years now. If you'd like to connect, you can reach me at saisunilsri@gmail.com or call me at 9159058924.
+
+Let me tell you about my journey. I specialize in Public Key Infrastructure, Identity and Access Management, and Cyber Security. What I really enjoy is taking complex security challenges and turning them into robust, scalable solutions. I've had the privilege of working on full lifecycle development - from the initial system design all the way through to product delivery - using technologies like Java, Spring Boot, and Microservices.
+
+One thing I'm particularly proud of is my experience in modernizing legacy systems. I've led migrations from Java 8 all the way up to Java 21, which is quite an undertaking! I've also implemented various cryptographic protocols like OAuth 2.0 and X.509 certificates.
+
+Now, let me share some of the exciting technologies I work with. I'm really passionate about AI and automation, so I use tools like Antigravity, Gemini CLI, Claude CLI, and n8n. I also work with Model Context Protocol, RAG systems, and Small Language Models.
+
+My core programming languages are Java - specifically versions 8, 17, and 21 - along with Python and JavaScript. For frameworks, I primarily use Spring Boot and Spring AI, Angular for front-end work, JavaFX for desktop applications, and Hibernate for database management.
+
+Security is where I really shine. I work extensively with PKI, OAuth 2.0, OIDC, JWT tokens, LDAP, SSL and X.509 certificates, Hardware Security Modules, OpenSSL, and I'm even exploring Post-Quantum Cryptography to prepare for the future of secure communications.
+
+On the cloud side, I'm experienced with Azure DevOps - including CI/CD pipelines and Infrastructure as Code - Azure IAM, and AWS services like EC2 and S3. I also work with the ELK Stack for logging and monitoring.
+
+For databases, I'm comfortable with PostgreSQL, MySQL, Oracle 21c, and Redis. I work with various protocols and standards including REST APIs, SOAP, XML, JSON, CBOR, and WSDL.
+
+I follow architectural patterns like MVC using JSP and J2EE, and I design Microservices architectures with both REST and SOAP APIs. My build tools include Maven, Gradle, and Docker, and I deploy on servers like Tomcat, Netty, and Nginx.
+
+Beyond technical skills, I pride myself on being a strong team player. I'm good at problem-solving, debugging complex issues, critical thinking, and communicating technical concepts clearly to both technical and non-technical audiences.
+
+My interests span across Research and Development, Software Development, Cyber Security, Blockchain technology, and Project Management.
+
+Currently, I'm working as a Software Engineer at eMudhra in Bangalore. I joined in June 2022, and it's been an incredible journey of almost 4 years now. At eMudhra, we're a licensed Certifying Authority serving both government and private sectors. I develop PKIaaS solutions, Digital Signatures, and Identity Management Systems. I manage the full Software Development Life Cycle for multiple applications, ensuring we deliver high-quality products.
+
+Some of the products I've worked on include Private CA, Time Stamp Authority, OCSP, National Public Key Directory, SPOC, TCC, V2X Security CERT, and mobile Driver License systems.
+
+Let me tell you about my educational background. I earned my Bachelor of Engineering in Computer Science from Ganadipathy Tulsi's Jain Engineering College, which is affiliated with Anna University in Vellore. I completed that from August 2018 to April 2021. Before that, I did my Diploma in Computer Engineering from Sri Venkateswara Polytechnic College in Vellore, from June 2015 to April 2018.
+
+Now, here are some projects I'm really excited about.
+
+First, there's eMCP - the eMudhra Model Context Protocol. I engineered this application using Java 21, Spring Boot, and Spring AI to establish a protocol for intelligent data communication between systems. It's been fascinating work!
+
+Then there's mDL - the Mobile Driver License project. I built a complete digital identification solution using Java 21, Spring Boot, and Angular 17. We implemented CBOR, JSON, and XML serialization to make sure everything works seamlessly across different systems.
+
+I also worked on emCA, which is our Private CA and PKIaaS solution. This was a massive undertaking where I led the migration from JDK 8 to JDK 17 and then to JDK 21. I integrated Single Sign-On using SAML and LDAP - that alone accounted for 60% of our code changes! We enhanced the infrastructure by implementing OCSP, timestamping, and extensive protocol support.
+
+Another interesting project was the National Public Key Directory, or nPKD. I developed this to interface with ICAO PKD, which enables secure exchange of ePassport authentication data via LDAP. I implemented schedulers for automated maintenance of certificates, Certificate Revocation Lists, and Master Lists, all following ICAO standards.
+
+I also spearheaded the SecurePass Identity Management System migration from Java 8 to Java 17, completely restructuring our security protocols to make the system architecture more robust.
+
+One of my favorite projects from my academic days was a Speech to Scenario Simulation system using NLP and Deep Learning. I designed a voice-to-simulation generator using Python 3, PyTorch, TensorFlow, and NLP techniques to translate vocal inputs into dynamic visual simulations. It was primarily for educational research, and it was amazing to see it come to life!
+
+I'm also committed to continuous learning. I've earned several certifications including the Atlassian Agile Project Management Professional Certificate from LinkedIn and Atlassian, the Developing Secure Software certification from The Linux Foundation, the ISO/IEC 42001:2023 Artificial Intelligence Management System certification from Alison, and CompTIA Security Plus from Cybrary.
+
+So that's me in a nutshell! I'm passionate about security, love solving complex problems, and I'm always eager to learn new technologies and take on challenging projects. Thanks so much for taking the time to listen to my introduction. I'd love to connect and discuss how I can contribute to your team or project!

@@ -21,6 +21,62 @@
             <i class="fas fa-bars"></i>
         </button>
         <div class="logo"><i class="fas fa-code"></i> SS</div>
+        <button id="audio-resume-btn" class="audio-resume-btn" title="Listen to Audio Resume">
+            <i class="fas fa-volume-up"></i>
+            <span class="audio-text">Audio Resume</span>
+        </button>
+
+        <!-- Audio Controls Panel -->
+        <div id="audio-controls-panel" class="audio-controls-panel">
+            <div class="controls-header">
+                <h4><i class="fas fa-sliders-h"></i> Audio Controls</h4>
+                <button id="close-controls" class="close-controls-btn" title="Close Controls">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar" id="audio-progress-bar"></div>
+                <div class="progress-time">
+                    <span id="current-time">0:00</span>
+                    <span id="total-time">0:00</span>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="voice-select">
+                    <i class="fas fa-user"></i> Voice
+                </label>
+                <select id="voice-select" class="voice-select">
+                    <option value="">Loading voices...</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="volume-control">
+                    <i class="fas fa-volume-up"></i> Volume
+                </label>
+                <input type="range" id="volume-control" min="0" max="1" step="0.1" value="1">
+                <span id="volume-value">100%</span>
+            </div>
+            <div class="control-group">
+                <label for="speed-control">
+                    <i class="fas fa-tachometer-alt"></i> Speed
+                </label>
+                <input type="range" id="speed-control" min="0.5" max="2" step="0.1" value="1">
+                <span id="speed-value">1.0x</span>
+            </div>
+            <div class="control-group">
+                <label for="pitch-control">
+                    <i class="fas fa-sliders-h"></i> Pitch
+                </label>
+                <input type="range" id="pitch-control" min="0.5" max="2" step="0.1" value="1">
+                <span id="pitch-value">1.0</span>
+            </div>
+            <button id="reset-controls" class="reset-btn">
+                <i class="fas fa-redo"></i> Reset
+            </button>
+        </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -38,7 +94,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 class="animate-text">Saisunil Sridharan </h1>
-            <p class="animate-text-delay">Software Engineer | Expertise in PKI, IAM, Cyber Security, R&amp;D</p>
+            <p class="animate-text-delay">A* Stack Engineer | Expertise in PKI, IAM, Cyber Security, R&amp;D</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/saisunilsridharan/" target="_blank"><i
                         class="fab fa-linkedin"></i></a>
@@ -54,17 +110,13 @@
     <!-- About Section -->
     <section id="about" class="about">
         <h2>About Me</h2>
-        <p>As a Full Stack Engineer at eMudhra, I am passionate about developing and deploying innovative solutions for
-            public key infrastructure (PKI) and cybersecurity, using cutting-edge technologies such as post-quantum
-            cryptography. I work with a diverse and talented team of engineers, researchers, and managers to deliver
-            high-quality products and services that meet the needs and expectations of our clients and partners.
-
-            With a Bachelor of Engineering degree in Computer Science from Ganadipathy Tulsi's Engineering College, I
-            have a strong foundation and interest in programming, data structures, algorithms, and cryptography. I have
-            also acquired multiple skills in project management, web development, database design, and cloud computing,
-            through various courses, projects, and internships. I am always eager to learn new things, challenge myself,
-            and improve my abilities. My goal is to leverage my skills and experience to create positive social and
-            economic impact through technology.</p>
+        <p>Software Engineer with over 3.8 years of experience specializing in Public Key Infrastructure (PKI), Identity
+            and Access Management (IAM), and Cyber Security. Proven track record in full lifecycle development, from
+            system design to product delivery, using Java, Spring Boot, and Microservices. Expertise in upgrading legacy
+            systems (Java 8 to 17/21) and implementing cryptographic protocols (OAuth 2.0, X.509).</p>
+        <p>Passionate about developing innovative PKIaaS solutions and cybersecurity implementations using cutting-edge
+            technologies including Post-Quantum Cryptography. Working with diverse teams of engineers, researchers, and
+            managers to deliver high-quality products serving government and private sector clients.</p>
     </section>
 
     <!-- Experience Section -->
@@ -77,16 +129,14 @@
                 </div>
                 <div class="timeline-content">
                     <h3>Software Engineer - Emudhra, Bangalore</h3>
-                    <p class="duration">June 2022 - Present [<span id="emudhra-expirence-date"></span>]</p>
+                    <p class="duration">June 2022 - Feb 2026 [<span id="emudhra-expirence-date"></span>]</p>
                     <ul>
-                        <li>Working at Emudhra, a Certifying Authority (CA) providing PKI solutions (PKIaaS) products
-                            including Digital Signatures, Digital certificates, and Identity Management Systems</li>
-                        <li>Solving Public Key Infrastructure (PKI) problems and implementing cryptography solutions
+                        <li>Developing PKIaaS solutions, Digital Signatures, and Identity Management Systems for a
+                            licensed Certifying Authority (CA) serving government and private sectors</li>
+                        <li>Managed full SDLC for multiple applications, ensuring successful system design and product
+                            delivery</li>
+                        <li>Products worked on: CA (Private CA), TSA, OCSP, NPKD, SPOC, TCC, V2X Security (CERT), mDL
                         </li>
-                        <li>Developed multiple applications from system design to product delivery, focusing on PKI
-                            solutions for Government and Private organizations</li>
-                        <li>Worked on products including CA (Private CA), TSA, OCSP, NPKD, SPOC, TCC, V2X Security
-                            (CERT), and mDL</li>
                     </ul>
                 </div>
             </div>
@@ -201,21 +251,56 @@
         <!-- Tech Stack -->
         <div class="skill-category">
             <h3>Tech Stack</h3>
+
+            <div class="skill-subcategory">
+                <h4>AI Agents and Tools</h4>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-robot"></i>
+                        <span>Antigravity</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-terminal"></i>
+                        <span>Gemini CLI</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-terminal"></i>
+                        <span>Claude CLI</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-network-wired"></i>
+                        <span>n8n</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-plug"></i>
+                        <span>MCP</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-brain"></i>
+                        <span>RAG</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-microchip"></i>
+                        <span>SLM</span>
+                    </div>
+                </div>
+            </div>
+
             <div class="skill-subcategory">
                 <h4>Programming Languages</h4>
                 <div class="skills-grid">
                     <div class="skill-item">
                         <i class="fab fa-java"></i>
-                        <span>Java</span>
+                        <span>Java (8, 17, 21)</span>
                     </div>
                     <div class="skill-item">
                         <i class="fab fa-python"></i>
                         <span>Python</span>
                     </div>
-                    <!-- <div class="skill-item">
-                        <i class="fab fa-golang"></i>
-                        <span>GO</span>
-                    </div> -->
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
                 </div>
             </div>
 
@@ -246,15 +331,23 @@
                 <div class="skills-grid">
                     <div class="skill-item">
                         <i class="fas fa-leaf"></i>
-                        <span>Spring Boot 3</span>
+                        <span>Spring Boot</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-brain"></i>
+                        <span>Spring AI</span>
                     </div>
                     <div class="skill-item">
                         <i class="fab fa-angular"></i>
-                        <span>Angular 18</span>
+                        <span>Angular</span>
                     </div>
                     <div class="skill-item">
                         <i class="fab fa-java"></i>
                         <span>JavaFX</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>Hibernate</span>
                     </div>
                 </div>
             </div>
@@ -285,6 +378,48 @@
                     <div class="skill-item">
                         <i class="fas fa-sync"></i>
                         <span>SOAP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-subcategory">
+                <h4>Security & IAM</h4>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-key"></i>
+                        <span>PKI</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-lock"></i>
+                        <span>OAuth 2.0</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-id-card"></i>
+                        <span>OIDC</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-key"></i>
+                        <span>JWT</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>LDAP</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>SSL/X.509</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>HSM</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-lock"></i>
+                        <span>OpenSSL</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-atom"></i>
+                        <span>Post-Quantum Cryptography (PQC)</span>
                     </div>
                 </div>
             </div>
@@ -458,6 +593,14 @@
                     <span>Problem Solving</span>
                 </div>
                 <div class="skill-item">
+                    <i class="fas fa-bug"></i>
+                    <span>Debugging</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Critical Thinking</span>
+                </div>
+                <div class="skill-item">
                     <i class="fas fa-comments"></i>
                     <span>Communication</span>
                 </div>
@@ -468,6 +611,10 @@
         <div class="skill-category">
             <h3>Area of Interest</h3>
             <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-flask"></i>
+                    <span>Research and Development</span>
+                </div>
                 <div class="skill-item">
                     <i class="fas fa-code"></i>
                     <span>Software Development</span>
